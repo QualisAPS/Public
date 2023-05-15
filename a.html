@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+vetA = [];
+vetB = [];
+vetC = [];
+num = 0;
+
+for(i = 0; i < 5; i++){
+    num = prompt("Digite um numero do vetor A");
+    num = parseInt(num);
+    vetA[i] = num;
+    vetC[i] = num;
+}
+
+for(i = 0; i < 5; i++){
+    num = prompt("Digite um numero vetor B");
+    num = parseInt(num);
+    vetB[i] = num;
+    vetC[i + 5] = vetB[i];
+}
+
+for(i = 0; i < 10; i++){
+    alert("O valor do vetor C na posicao "+ i + " e " + vetC[i]);
+}
+
+
+
+
+
+
+
+</script>
+</html>
