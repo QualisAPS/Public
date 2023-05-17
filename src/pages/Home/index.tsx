@@ -1,15 +1,7 @@
-import Partners from 'components/Partners'
-import Header from 'components/Header'
-import LastNews from 'components/News/last'
+import HomePage from 'screens/HomePage';
 
 function Home() {
-  return (
-    <>
-      <Header />
-      <LastNews />
-      <Partners />
-    </>
-  )
+  return <HomePage />;
 }
 
-export default Home
+export default Home;

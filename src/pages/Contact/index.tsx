@@ -1,10 +1,10 @@
 /*
   This example requires some changes to your config:
-  
+
   ```
   // tailwind.config.js
   const colors = require('tailwindcss/colors')
-  
+
   module.exports = {
     // ...
     theme: {
