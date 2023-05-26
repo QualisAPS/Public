@@ -1,44 +1,46 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @next/next/no-img-element */
+'use client';
+import Link from 'next/link';
 import { Disclosure } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { Link } from 'react-router-dom';
-import logo from '../../public/logo.png';
 import navLinks from './data';
-import TopHeader from 'components/TopHeader';
 
-function classNames(...classes: any) {
-  return classes.filter(Boolean).join(' ');
-}
+/* import icons */
+import { MdMenu } from 'react-icons/md';
+import { MdClose } from 'react-icons/md';
 
 export default function Header() {
   return (
     <Disclosure as="header" className="bg-white shadow">
       {({ open }) => (
         <>
-          <TopHeader />
           <div className="mx-auto max-w-7xl px-4 py-2 sm:px-6 lg:px-8">
             <div className="flex h-16 justify-between">
               <div className="flex">
                 <div className="-ml-2 mr-2 flex items-center md:hidden">
                   {/* Mobile menu button */}
                   <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500">
-                    <span className="sr-only">Abrir menu</span>
                     {open ? (
-                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                      <MdClose
+                        className="block h-6 w-6"
+                        aria-label="Abrir Menu"
+                      />
                     ) : (
-                      <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                      <MdMenu
+                        className="block h-6 w-6"
+                        aria-label="Fechar menu"
+                      />
                     )}
                   </Disclosure.Button>
                 </div>
                 <div className="flex shrink-0 items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
-                    src={logo}
+                    src="./static/logo.png"
                     alt="Logo da plataforma Qualis"
                   />
                   <img
                     className="hidden h-8 w-auto lg:block"
-                    src={logo}
+                    src="./static/logo.png"
                     alt="Logo da plataforma Qualis"
                     style={{ width: '194px', height: '54px' }}
                   />
@@ -54,7 +56,7 @@ export default function Header() {
                     >
                       <Link
                         className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900"
-                        to={link.url}
+                        href={link.url}
                       >
                         {link.name}
                       </Link>
