@@ -66,7 +66,7 @@ export default function Header() {
                 <div className="shrink-0">
                   <button
                     type="button"
-                    className="relative mr-2 inline-flex items-center rounded-md border-4 border-gray-400 px-4 py-2 text-sm font-medium text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                    className="relative mr-2 inline-flex items-center rounded-md border-2 border-gray-400 px-4 py-2 text-sm font-medium text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
                   >
                     <span>Entrar</span>
                   </button>
