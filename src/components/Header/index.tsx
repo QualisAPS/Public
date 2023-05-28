@@ -66,17 +66,19 @@ export default function Header() {
               </nav>
               <div className="flex items-center">
                 <div className="shrink-0">
+                  {/*
                   <button
                     type="button"
                     className="relative mr-2 inline-flex items-center rounded-md border-4 border-gray-400 px-4 py-2 text-sm font-medium text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
                   >
                     <span>Entrar</span>
                   </button>
+                  */}
                   <button
                     type="button"
                     className="relative inline-flex items-center rounded-md border border-transparent bg-teal-700 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
                   >
-                    <span>Cadastrar</span>
+                    Entrar
                   </button>
                 </div>
               </div>
