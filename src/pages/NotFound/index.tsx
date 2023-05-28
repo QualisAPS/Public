@@ -1,14 +1,6 @@
 export default function NotFound() {
   return (
     <>
-      {/*
-          This example requires updating your template:
-  
-          ```
-          <html class="h-full">
-          <body class="h-full">
-          ```
-        */}
       <main
         className="min-h-full bg-cover bg-top sm:bg-top"
         style={{
@@ -37,5 +29,5 @@ export default function NotFound() {
         </div>
       </main>
     </>
-  )
+  );
 }

@@ -16,8 +16,8 @@ const navLinks = [
   },
   {
     id: 4,
-    name: 'Biblioteca',
-    url: '/biblioteca'
+    name: 'Documentos',
+    url: '/documentos'
   },
   {
     id: 5,
