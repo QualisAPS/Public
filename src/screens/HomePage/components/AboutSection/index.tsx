@@ -6,7 +6,9 @@ export default function AboutSection() {
     <section className="mx-auto mt-11 max-w-7xl px-4 py-2 sm:px-6 lg:px-8">
       <header className="flex items-center gap-4 rounded-2xl bg-yellow p-2">
         <MdHistoryEdu className="text-5xl" />
-        <h2 className="text-4xl font-medium text-[#141414]">Quem Somos</h2>
+        <h2 className="text-2xl font-medium text-[#141414] md:text-4xl">
+          Quem Somos
+        </h2>
       </header>
       <article className="mt-7 bg-white p-6 shadow-lg">
         <div className="flex flex-col gap-4">

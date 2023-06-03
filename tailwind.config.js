@@ -16,7 +16,11 @@ module.exports = {
       colors: {
         yellow: '#FFCE04',
         paragraph: '#343434',
-        button: '#205C5E'
+        button: '#205C5E',
+        ocean: '#41B6BA',
+        green: '#13BA53',
+        gray: '#DEDDD7',
+        'green-variant': '#205C5E'
       }
     }
   },

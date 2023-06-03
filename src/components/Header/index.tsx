@@ -18,7 +18,7 @@ export default function Header() {
               <div className="flex">
                 <div className="-ml-2 mr-2 flex items-center md:hidden">
                   {/* Mobile menu button */}
-                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500">
+                  <Disclosure.Button className="text-gray-400 hover:bg-gray-100 hover:text-gray-500 inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500">
                     {open ? (
                       <MdClose
                         className="block h-6 w-6"
@@ -55,7 +55,7 @@ export default function Header() {
                       className="hidden md:ml-6 md:flex md:space-x-8"
                     >
                       <Link
-                        className="inline-flex items-center px-1 pt-1 text-lg font-medium text-gray-900"
+                        className="text-gray-900 inline-flex items-center px-1 pt-1 text-lg font-medium"
                         href={link.url}
                       >
                         {link.name}
@@ -98,21 +98,21 @@ export default function Header() {
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+                className="text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium sm:pl-5 sm:pr-6"
               >
                 Quem Somos
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+                className="text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium sm:pl-5 sm:pr-6"
               >
                 Notícias
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+                className="text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium sm:pl-5 sm:pr-6"
               >
                 Biblioteca
               </Disclosure.Button>
