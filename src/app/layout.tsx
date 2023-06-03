@@ -1,9 +1,12 @@
 import React from 'react';
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import Header from '@/components/Header';
 
-const inter = Inter({ subsets: ['latin'] });
+const roboto = Roboto({
+  weight: ['400', '500', '700', '900'],
+  subsets: ['latin']
+});
 
 export const metadata = {
   title: 'Qualis APS',
@@ -18,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <Header />
         {children}
       </body>

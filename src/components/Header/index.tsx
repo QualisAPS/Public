@@ -55,7 +55,7 @@ export default function Header() {
                       className="hidden md:ml-6 md:flex md:space-x-8"
                     >
                       <Link
-                        className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900"
+                        className="inline-flex items-center px-1 pt-1 text-lg font-medium text-gray-900"
                         href={link.url}
                       >
                         {link.name}

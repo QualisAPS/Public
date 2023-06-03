@@ -22,3 +22,11 @@ body {
   color: var(--default-color);
   background: var(--background);
 }
+
+.bg-banner {
+  background-color: #BDBCB8;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
