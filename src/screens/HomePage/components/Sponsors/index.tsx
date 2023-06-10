@@ -10,20 +10,15 @@ export default function SponsorsSection() {
           Patrocinadores
         </h2>
       </header>
-      <div className="mt-8 flex flex-wrap justify-between gap-3">
-        <Sponsors />
+      <div className="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-between">
+        <Sponsors src="/static/sponsors/unb.png" alt="logo da unb" />
+        <Sponsors src="/static/sponsors/fiocruz.png" alt="logo da fiocruz" />
+        <Sponsors src="/static/sponsors/sus.png" alt="logo do sus" />
+        <Sponsors
+          src="/static/sponsors/gdf.png"
+          alt="logo da secretaria de saude do Distrito Federal"
+        />
       </div>
-      {/*
-      <footer className="mt-4 flex justify-center">
-        <Link
-          href="/noticias"
-          className="mt-2 rounded-xl bg-button p-3 text-lg font-medium text-white"
-          aria-labelledby="about"
-        >
-          Acesse a Biblioteca Completa
-        </Link>
-      </footer>
-      */}
     </section>
   );
 }
