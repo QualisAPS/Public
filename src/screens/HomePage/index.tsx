@@ -1,17 +1,21 @@
-import Banner from './components/Banner';
-import About from './components/About';
-import LastNews from './components/News';
-import Partners from './components/Partners';
+import Hero from './components/Hero';
+import Brands from './components/Brands';
+import SectionAbout from './components/SectionAbout';
+import SectionNews from './components/SectionNews';
+import SectionLibrary from './components/SectionLibrary';
 
-export default function HomePage() {
+const HomePage = () => {
   return (
     <>
-      <Banner />
+      <Hero />
       <main>
-        <About />
-        <LastNews />
-        <Partners />
+        <Brands />
+        <SectionAbout />
+        <SectionNews />
+        <SectionLibrary />
       </main>
     </>
   );
-}
+};
+
+export default HomePage;
