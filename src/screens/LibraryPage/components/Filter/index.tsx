@@ -5,15 +5,15 @@ import { Listbox, Transition } from '@headlessui/react'
 import { MdCheck } from "react-icons/md";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 
-const categories = [
-  { name: 'Diagnóstico Inicial' },
-  { name: 'Primeiro Ciclo Avaliativo' },
-  { name: 'Segundo Ciclo Avaliativo' },
-  { name: 'Transversal' },
-]
-
 export default function Filter() {
+  const categories = [
+    { name: 'Diagnóstico Inicial' },
+    { name: 'Primeiro Ciclo Avaliativo' },
+    { name: 'Segundo Ciclo Avaliativo' },
+    { name: 'Transversal' },
+  ]
   const [selected, setSelected] = useState(categories[0])
+
 
   return (
     <div className='flex flex-col gap-1'>
