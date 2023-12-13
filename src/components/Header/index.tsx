@@ -42,14 +42,14 @@ const Header = () => {
         <div className="w-full lg:w-1/2 flex items-center justify-between">
           <a href="/">
             <Image
-              src="/static/logo.png"
+              src="/images/logo/logo.png"
               alt="Logo do QualisAPS"
               width={130}
               height={30}
               className="w-full hidden dark:block"
             />
             <Image
-              src="/static/logo.png"
+              src="/images/logo/logo.png"
               alt="Logo do QualisAPS"
               width={130}
               height={30}
@@ -128,8 +128,9 @@ const Header = () => {
             <ThemeToggler />
 
             <Link
-              href="/"
+              href="https://homologa.qualisaps.unb.br/home?act=login"
               className="flex items-center justify-center bg-green hover:bg-green-300 ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5"
+              target='_blank'
             >
               Entrar
             </Link>

@@ -4,7 +4,7 @@ import SharePost from '@/components/SharePost';
 const SingleBlogPage = async () => {
   return (
     <>
-      <title>{`Noticia teste - Qualis`}</title>
+      <title>{`Nova etapa da avaliação da Atenção Primária`}</title>
       <section className="pt-35 lg:pt-45 xl:pt-50 pb-20 lg:pb-25 xl:pb-30">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex flex-col lg:flex-row gap-7.5 xl:gap-12.5">
@@ -13,7 +13,7 @@ const SingleBlogPage = async () => {
                 <div className="mb-10 w-full overflow-hidden ">
                   <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                     <Image
-                      src={'/images/blog/blog-01.png'}
+                      src={'/images/blog/news.jpg'}
                       alt="Kobe Steel plant that supplied"
                       fill
                       className="object-cover object-center rounded-md"
@@ -27,19 +27,19 @@ const SingleBlogPage = async () => {
 
                 <ul className="flex flex-wrap gap-5 2xl:gap-7.5 mb-9">
                   <li>
-                    <span className="text-black dark:text-white">Author: </span>{' '}
-                    Teste
+                    <span className="text-black dark:text-white">Autor: </span>{' '}
+                    Equipe Qualis
                   </li>
                   <li>
                     <span className="text-black dark:text-white">
-                      Publicado em: 13 de Setembro, 2023
+                      Publicado em: 13 de Dezembro, 2023
                     </span>{' '}
                   </li>
                   <li>
                     <span className="text-black dark:text-white">
                       Categoria:
                     </span>
-                    QualisAPS
+                    Artigos
                   </li>
                 </ul>
 
@@ -65,21 +65,6 @@ const SingleBlogPage = async () => {
                     organização dos dados coletados.
                   </p>
 
-                  <div className="flex flex-wrap gap-5">
-                    <Image
-                      src={'/images/blog/blog-01.png'}
-                      width={350}
-                      height={200}
-                      alt="image"
-                    />
-                    <Image
-                      src={'/images/blog/blog-02.png'}
-                      width={350}
-                      height={200}
-                      alt="image"
-                    />
-                  </div>
-
                   <h3 className="pt-8">Avaliação in loco</h3>
 
                   <p>
@@ -101,7 +86,7 @@ const SingleBlogPage = async () => {
             <div className="md:w-1/2 lg:w-[32%]">
               <div className="animate_top rounded-md shadow-solid-13 bg-white dark:bg-blacksection border border-stroke dark:border-strokedark p-9 mb-10">
                 <h4 className="font-semibold text-2xl text-black dark:text-white mb-7.5">
-                  Categories
+                  Categorias
                 </h4>
 
                 <ul>

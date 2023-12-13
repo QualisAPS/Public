@@ -2,32 +2,25 @@ import { Brand } from "@/types/brand";
 
 const brandData: Brand[] = [
   {
-    id: 0.25,
-    name: "Client",
+    id: 1,
+    name: "Logo da Unv",
     href: "https://www.unb.br/",
-    image: "/static/sponsors/unb.png",
-    imageLight: "/static/sponsors/unb.png",
+    image: "/images/brand/unb.png",
+    imageLight: "/images/brand/unb.png",
   },
   {
-    id: 0.3,
-    name: "Client",
-    href: "https://www.saude.df.gov.br/",
-    image: "/static/sponsors/gdf.png",
-    imageLight: "/static/sponsors/gdf.png",
-  },
-  {
-    id: 0.4,
-    name: "Client",
+    id: 2,
+    name: "Logo do sus",
     href: "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sus",
-    image: "/static/sponsors/sus.png",
-    imageLight: "/static/sponsors/sus.png",
+    image: "/images/brand/sus.png",
+    imageLight: "/images/brand/sus.png",
   },
   {
-    id: 0.5,
-    name: "Client",
+    id: 3,
+    name: "Logo da Fiocruz",
     href: "https://portal.fiocruz.br/",
-    image: "/static/sponsors/fiocruz.png",
-    imageLight: "/static/sponsors/fiocruz.png",
+    image: "/images/brand/fiocruz.png",
+    imageLight: "/images/brand/fiocruz.png",
   },
 ];
 
