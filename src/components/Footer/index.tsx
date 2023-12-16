@@ -33,14 +33,14 @@ const Footer = () => {
               <Image
                 width={190}
                 height={80}
-                src="/static/logo.png"
+                src="/images/logo/logo.png"
                 alt=" Avaliação da Atenção Primária à Saúde do Distrito Federal"
                 className="dark:hidden"
               />
               <Image
                 width={190}
                 height={80}
-                src="/static/logo.png"
+                src="/images/logo/logo.png"
                 alt=" Avaliação da Atenção Primária à Saúde do Distrito Federal"
                 className="hidden dark:block"
               />

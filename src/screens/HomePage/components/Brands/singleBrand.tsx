@@ -1,7 +1,7 @@
-import React from "react";
-import Image from "next/image";
-import { Brand } from "@/types/brand";
-import { motion } from "framer-motion";
+import React from 'react';
+import Image from 'next/image';
+import { Brand } from '@/types/brand';
+import { motion } from 'framer-motion';
 
 const SingleBrand = ({ brand }: { brand: Brand }) => {
   const { image, href, name, imageLight, id } = brand;
@@ -12,13 +12,13 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         variants={{
           hidden: {
             opacity: 0,
-            y: -20,
+            y: -20
           },
 
           visible: {
             opacity: 1,
-            y: 0,
-          },
+            y: 0
+          }
         }}
         initial="hidden"
         whileInView="visible"

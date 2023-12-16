@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
-import { Blog } from "@/types/blog";
+import { Library } from "@/types/library";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const BlogItem = ({ blog }: { blog: Blog }) => {
-  const { mainImage, title, metadata } = blog;
+const LibraryItem = ({ blog }: { blog: Library }) => {
+  const { mainImage, title, href } = blog;
 
   return (
     <>
@@ -27,13 +27,13 @@ const BlogItem = ({ blog }: { blog: Blog }) => {
         viewport={{ once: true }}
         className="animate_top bg-white dark:bg-blacksection rounded-lg shadow-solid-13 pb-4"
       >
-        <Link href='/pdf/manual.pdf' className="block relative aspect-[368/240]">
+        <Link href={href} className="block relative aspect-[368/240]">
           <Image src={mainImage} alt={title} fill />
         </Link>
 
         <div className="px-4">
           <h4 className="font-medium text-lg xl:text-itemtitle2 text-black hover:text-primary dark:hover:text-primary dark:text-white mt-7.5 mb-3.5">
-            <Link href='/pdf/manual.pdf'>
+            <Link href={href}>
               {" "}
               {`${title.slice(0, 40)}`}
             </Link>
@@ -44,4 +44,4 @@ const BlogItem = ({ blog }: { blog: Blog }) => {
   );
 };
 
-export default BlogItem;
+export default LibraryItem;

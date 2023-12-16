@@ -3,7 +3,7 @@ import { Brand } from "@/types/brand";
 const brandData: Brand[] = [
   {
     id: 1,
-    name: "Logo da Unv",
+    name: "Logo da Unb",
     href: "https://www.unb.br/",
     image: "/images/brand/unb.png",
     imageLight: "/images/brand/unb.png",

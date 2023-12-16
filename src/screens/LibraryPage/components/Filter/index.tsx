@@ -6,18 +6,18 @@ import { MdCheck } from "react-icons/md";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 
 export default function Filter() {
-  const categories = [
-    { name: 'Diagnóstico Inicial' },
-    { name: 'Primeiro Ciclo Avaliativo' },
-    { name: 'Segundo Ciclo Avaliativo' },
-    { name: 'Transversal' },
+  const year = [
+    { name: '2020' },
+    { name: '2021' },
+    { name: '2022' },
+    { name: '2023' },
   ]
-  const [selected, setSelected] = useState(categories[0])
+  const [selected, setSelected] = useState(year[0])
 
 
   return (
     <div className='flex flex-col gap-1'>
-      <label className='text-zinc-800 dark:text-white'>Filtrar por Categoria</label>
+      <label className='text-zinc-800 dark:text-white'>Filtrar por Ano</label>
       <Listbox value={selected} onChange={setSelected}>
         <div className="relative mt-1">
           <Listbox.Button className="relative w-full cursor-default rounded-lg bg-white py-4 pl-3 pr-10 text-left border border-stroke dark:border-strokedark shadow-solid-12 dark:shadow-none focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
@@ -36,7 +36,7 @@ export default function Filter() {
             leaveTo="opacity-0"
           >
             <Listbox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm">
-              {categories.map((person, personIdx) => (
+              {year.map((person, personIdx) => (
                 <Listbox.Option
                   key={personIdx}
                   className={({ active }) =>

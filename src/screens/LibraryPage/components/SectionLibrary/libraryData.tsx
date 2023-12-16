@@ -1,42 +1,13 @@
-import { Blog } from '@/types/blog';
+import { Library } from '@/types/library';
 
-const BlogData: Blog[] = [
+const libraryData: Library[] = [
   {
     _id: 1,
     mainImage: '/images/library.png',
+    href: '/pdf/manual.pdf',
+    year: '2021',
     title: 'Manual Instrutivo QualisAPS 2023',
   },
-  {
-    _id: 2,
-    mainImage: '/images/blog/blog-02.png',
-    title: 'Matriz PAQ GSAP',
-  },
-  {
-    _id: 2,
-    mainImage: '/images/blog/blog-03.png',
-    title: 'Matriz PAQ Equipes',
-  },
-  {
-    _id: 1,
-    mainImage: '/images/blog/blog-03.png',
-    title: 'Equipe Caderno',
-    metadata:
-      ''
-  },
-  {
-    _id: 2,
-    mainImage: '/images/blog/blog-04.png',
-    title: 'Equipe Gabarito',
-    metadata:
-      ''
-  },
-  {
-    _id: 2,
-    mainImage: '/images/blog/blog-01.png',
-    title: 'Manual Avaliação',
-    metadata:
-      ''
-  }
 ];
 
-export default BlogData;
+export default libraryData;
