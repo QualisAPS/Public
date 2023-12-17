@@ -1,16 +1,45 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useState } from 'react';
 import LibraryItem from './LibraryItem';
 import libraryData from './libraryData';
+import { useSearchParams } from 'next/navigation';
 
-const SectionLibrary = async () => {
+const SectionLibrary = () => {
+  const [filteredData, setFilteredData] = useState(libraryData);
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const year = searchParams.get('ano');
+    const title = searchParams.get('titulo');
+    let tempData = libraryData;
+
+    if (year && year !== '0') {
+      tempData = tempData.filter((item) => item.year === year);
+    }
+
+    if (title) {
+      tempData = tempData.filter((item) => item.title.toLowerCase().includes(title.toLowerCase()));
+    }
+    setFilteredData(tempData);
+  }, [searchParams]);
+
   return (
     <section>
       <div className="mx-auto max-w-c-1280 px-4 md:px-8 xl:px-0">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-8">
-          {libraryData.slice(0, 6).map((blog, key) => (
+        
+        {filteredData.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-8">
+            {
+              filteredData.slice(0, 31).map((blog, key) => (
             <LibraryItem blog={blog} key={key} />
-          ))}
-        </div>
+            ))}
+          </div>
+          
+          ) : (
+              <p className='text-center w-full'>Nenhum resultado encontrado.</p>
+          )}
+        
       </div>
     </section>
   );

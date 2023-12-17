@@ -1,11 +1,12 @@
-"use client";
-import Image from "next/image";
-import { Blog } from "@/types/blog";
-import Link from "next/link";
-import { motion } from "framer-motion";
+'use client';
 
-const BlogItem = ({ blog }: { blog: Blog }) => {
-  const { mainImage, title, metadata } = blog;
+import Image from 'next/image';
+import { Library } from '@/types/library';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+
+const LibraryItem = ({ blog }: { blog: Library }) => {
+  const { mainImage, title, href } = blog;
 
   return (
     <>
@@ -13,35 +14,26 @@ const BlogItem = ({ blog }: { blog: Blog }) => {
         variants={{
           hidden: {
             opacity: 0,
-            y: -20,
+            y: -20
           },
 
           visible: {
             opacity: 1,
-            y: 0,
-          },
+            y: 0
+          }
         }}
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 1, delay: 0.5 }}
         viewport={{ once: true }}
-        className="animate_top bg-white dark:bg-blacksection rounded-lg shadow-solid-8 p-4 pb-9"
+        className="animate_top bg-white dark:bg-blacksection rounded-lg shadow-solid-13"
       >
-        <Link href='/pdf/manual.pdf' className="block relative aspect-[368/239]">
-          <Image src={mainImage} alt={title} fill />
+        <Link href={href} className="block relative h-full">
+          <Image width={331} height={466} src={mainImage} alt={title} />
         </Link>
-
-        <div className="px-4">
-          <h4 className="font-medium text-lg xl:text-itemtitle2 text-black hover:text-primary dark:hover:text-primary dark:text-white mt-7.5 mb-3.5">
-            <Link href='/pdf/manual.pdf'>
-              {" "}
-              {`${title.slice(0, 40)}`}
-            </Link>
-          </h4>
-        </div>
       </motion.div>
     </>
   );
 };
 
-export default BlogItem;
+export default LibraryItem;
