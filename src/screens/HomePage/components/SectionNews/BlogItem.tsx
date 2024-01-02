@@ -28,7 +28,7 @@ const LibraryItem = ({ blog }: { blog: Blog }) => {
         className="animate_top bg-white dark:bg-blacksection rounded-lg shadow-solid-8 p-4 pb-9"
       >
         <Link href="/noticia-qualis" className="block relative aspect-[368/239]">
-          <Image src={mainImage} alt={title} fill />
+          <Image src="/images/blog/news.jpg" alt="Qualis-APS: Mostra de trabalhos" fill />
         </Link>
 
         <div className="px-4">
