@@ -15,7 +15,7 @@ const Supporters = () => {
             >
               <Image
                 className="opacity-65 transition-all duration-300 hover:opacity-100 image"
-                src="/images/apoiadores/unb.png"
+                src="/images/apoiadores/unb.jpg"
                 alt="Logo da Unb"
                 fill
               />

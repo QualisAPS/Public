@@ -56,7 +56,7 @@ const SectionAbout = () => {
                 telefônicas e do preenchimento de um instrumento pelas GSAPS.
                 Para completar esse o diagnóstico será realizado a autoavaliação
                 pelas equipes de saúde da família e de saúde bucal e pelas
-                Gerências de Serviços da Atenção Primária à Saúde (GSAPS). O
+                Gerências de Serviços da Atenção Primária à Saúde (GSAP). O
                 primeiro ciclo iniciou em 2021 com o Plano de Ação para a
                 Qualidade (PAQ) e com a Avaliação in loco e Certificação em
                 2022.

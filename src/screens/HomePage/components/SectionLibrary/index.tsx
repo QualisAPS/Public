@@ -14,7 +14,7 @@ const SectionLibrary = async () => {
             headerInfo={{
               title: `Biblioteca`,
               subtitle: `Biblioteca Digital`,
-              description: `O QualisAPS conta com uma biblioteca virtual.`
+              description: `O Qualis-APS conta com uma biblioteca virtual.`
             }}
           />
         </div>

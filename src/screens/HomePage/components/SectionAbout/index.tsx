@@ -28,7 +28,7 @@ const SectionAbout = () => {
 
               <p>
                 O Programa de Qualificação da Atenção Primária à Saúde do
-                Distrito Federal (QualisAPS) tem uma proposta inovadora pois
+                Distrito Federal (Qualis-APS) tem uma proposta inovadora pois
                 desenvolve ações de forma participativa, considerando as
                 experiências e o conhecimento dos trabalhadores, gestores e
                 representantes dos usuários do Sistema Único de Saúde (SUS) do

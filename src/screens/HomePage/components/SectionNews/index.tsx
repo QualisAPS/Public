@@ -13,7 +13,7 @@ const SectionNews = async () => {
             headerInfo={{
               title: `Notícias & Artigos`,
               subtitle: `Notícias e Artigos`,
-              description: `Confira aqui as últimas matérias e artigos do QualisAPS.`,
+              description: `Confira aqui as últimas matérias e artigos do Qualis-APS.`,
             }}
           />
         </div>
