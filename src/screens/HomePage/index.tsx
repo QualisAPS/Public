@@ -1,21 +1,21 @@
-import Banner from './components/Banner';
-import AboutSection from './components/AboutSection';
-import NewsSection from './components/NewsSection';
-import LibrarySection from './components/LibrarySection';
-import EventsSection from './components/EventsSection';
-import SponsorsSection from './components/Sponsors';
+import Hero from './components/Hero';
+import SectionSupporters from './components/SectionSupporters';
+import SectionAbout from './components/SectionAbout';
+import SectionNews from './components/SectionNews';
+import SectionLibrary from './components/SectionLibrary';
 
-export default function HomePage() {
+const HomePage = () => {
   return (
     <>
-      <Banner />
+      <Hero />
       <main>
-        <AboutSection />
-        <NewsSection />
-        <LibrarySection />
-        <EventsSection />
-        <SponsorsSection />
+        <SectionSupporters />
+        <SectionAbout />
+        <SectionNews />
+        <SectionLibrary />
       </main>
     </>
   );
-}
+};
+
+export default HomePage;

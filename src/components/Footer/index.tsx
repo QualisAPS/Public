@@ -1,89 +1,135 @@
-import { FaFacebookSquare } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
-import { FaTwitterSquare } from 'react-icons/fa';
+'use client';
 
-export default function Footer() {
+import React from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { FaInstagram } from 'react-icons/fa';
+import { FaFacebookSquare } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
+
+const Footer = () => {
   return (
-    <footer className="mt-11 bg-green-variant">
-      <div className="mx-auto max-w-7xl p-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-6">
-          <section className="flex items-center justify-center py-2">
-            <div className="grid grid-cols-2 items-center gap-3 divide-x text-white lg:grid-cols-2">
-              <h3 className="text-xl font-semibold text-[#FFFFFF] md:text-3xl">
-                QualisAPS
-              </h3>
-              <nav aria-label="Redes Sociais" className="pl-4">
-                <ul className="flex items-center gap-3">
-                  <li>
-                    <a
-                      href="https://www.facebook.com/programa.qualisaps/"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="Facebook"
-                    >
-                      <FaFacebookSquare
-                        aria-hidden="true"
-                        className="text-3xl"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/qualis_aps/"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="Instagram"
-                    >
-                      <FaInstagram aria-hidden="true" className="text-3xl" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://twitter.com/qualis_aps"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="Twitter"
-                    >
-                      <FaTwitterSquare
-                        aria-hidden="true"
-                        className="text-3xl"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </section>
-          <section className="flex justify-center">
-            <div className="grid grid-cols-1 gap-1 divide-x text-center text-white lg:grid-cols-3">
-              <article>
-                <h4 className="text-lg font-semibold">
-                  Universidade de Brasilia
-                </h4>
-              </article>
-              <article className="pl-4">
-                <h4 className="text-lg font-semibold">
-                  Fundação Oswaldo Cruz (Fiocruz)
-                </h4>
-              </article>
-              <article className="pl-4">
-                <h4 className="text-lg font-semibold">
-                  Secretaria de Saúde do Distrito Federal
-                </h4>
-              </article>
-            </div>
-          </section>
-          <hr className="text-slate-400" />
-          <section className="mt-3 flex justify-center">
-            <article>
-              <p className="text-center text-white">
-                © 2023, Desenvolvido pela Equipe de TI do{' '}
-                <strong>QualisAPS</strong>
-              </p>
-            </article>
-          </section>
+    <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
+      <section className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+        <div
+          className="flex flex-col flex-wrap items-center
+        justify-center gap-5 border-t border-stroke
+        py-7 dark:border-strokedark lg:flex-row lg:justify-between lg:gap-0"
+        >
+          <motion.div
+            variants={{
+              hidden: {
+                opacity: 0,
+                y: -20
+              },
+
+              visible: {
+                opacity: 1,
+                y: 0
+              }
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="animate_top w-1/2 lg:w-1/4"
+          >
+            <a href="index.html" className="relative">
+              <Image
+                width={190}
+                height={80}
+                src="/assets/images/logos/logo.png"
+                alt=" Avaliação da Atenção Primária à Saúde do Distrito Federal"
+                className="dark:hidden"
+              />
+              <Image
+                width={190}
+                height={80}
+                src="/assets/images/logos/logo.png"
+                alt=" Avaliação da Atenção Primária à Saúde do Distrito Federal"
+                className="hidden dark:block"
+              />
+            </a>
+          </motion.div>
+
+          <motion.div
+            variants={{
+              hidden: {
+                opacity: 0,
+                y: -20
+              },
+
+              visible: {
+                opacity: 1,
+                y: 0
+              }
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="animate_top"
+          >
+            <p className="dark:text-white">
+              &copy; 2020. Todos os direitos reservados
+            </p>
+          </motion.div>
+
+          <motion.div
+            variants={{
+              hidden: {
+                opacity: 0,
+                y: -20
+              },
+
+              visible: {
+                opacity: 1,
+                y: 0
+              }
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="animate_top"
+          >
+            <ul className="flex items-center gap-5" aria-label="Redes Sociais">
+              <li>
+                <a
+                  href="https://www.instagram.com/qualis_aps/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                >
+                  <FaInstagram className="fill-[#393939] text-3xl transition-all duration-300 hover:fill-green-300 dark:fill-[#e2e2e2] dark:text-white" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/programa.qualisaps/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook"
+                >
+                  <FaFacebookSquare className="fill-[#393939] text-3xl transition-all duration-300 hover:fill-green-300 dark:fill-[#e2e2e2]" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/qualis_aps"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Twitter"
+                >
+                  <FaTwitter className="fill-[#393939] text-3xl transition-all duration-300 hover:fill-green-300 dark:fill-[#e2e2e2]" />
+                </a>
+              </li>
+            </ul>
+          </motion.div>
         </div>
-      </div>
+      </section>
     </footer>
   );
-}
+};
+
+export default Footer;
