@@ -36,7 +36,8 @@ module.exports = {
       socialicon: '#D1D8E0',
       'zinc-800': '#27272a',
       green: '#21585B',
-      'green-300': '#2A6D70'
+      'green-300': '#2A6D70',
+      'text-gray-950': '#333333'
     },
     extend: {
       fontSize: {
