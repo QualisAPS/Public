@@ -5,9 +5,7 @@ import WrapperText from './components/WrapperText';
 const AccessibilityPage = () => {
   return (
     <>
-      <Breadcrumb
-        pageName="Acessibilidade"
-      />
+      <Breadcrumb pageName="Acessibilidade" />
       <main>
         <SectionTitle />
         <WrapperText />

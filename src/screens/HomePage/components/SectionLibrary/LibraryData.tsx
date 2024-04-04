@@ -1,4 +1,4 @@
-import { Library } from "@/types/library";
+import { Library } from '@/types/library';
 
 const LibraryData: Library[] = [
   {
@@ -30,12 +30,10 @@ const LibraryData: Library[] = [
   },
   {
     _id: 4,
-    mainImage:
-      '/assets/images/covers/Caderno_ QualisAPS_Instrumento de Autoavaliação das Equipes do NASF_04_11.png',
-    href: '/assets/pdf/Caderno_ QualisAPS_Instrumento de Autoavaliação das Equipes do NASF_04_11.pdf',
-    year: '2022',
-    title:
-      'Instrumento de Autoavaliação das Equipes do Núcleo Ampliado de Saúde da Família (eNasf-AB)'
+    mainImage: '/assets/images/covers/adulto_inst_28-08.png',
+    href: '/assets/pdf/adulto_inst_28-08.pdf',
+    year: '2023',
+    title: 'AVALIAÇÃO IN LOCO -2º Ciclo Módulo Usuário adulto'
   }
 ];
 
