@@ -100,10 +100,10 @@ const Timeline = () => {
               Setembro de 2022 a Novembro de 2022
             </time>
             <h3 className="text-gray-900 text-lg font-semibold dark:text-white">
-              Autoavalição NASF.
+              Autoavalição eMulti.
             </h3>
             <p className="text-gray-500 dark:text-gray-400 text-base font-normal">
-              Realização da Autoavalição dos NASF.
+              Realização da Autoavalição dos eMulti.
             </p>
           </li>
           <li className="mb-10 ml-4">
