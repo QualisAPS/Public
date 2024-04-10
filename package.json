@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "cypress:open": "cypress open",
-    "prepare": "husky"
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",

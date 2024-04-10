@@ -25,7 +25,7 @@ const WrapperText = () => {
               Se você tiver sugestões ou encontrar problemas, por favor, entre
               em contato pelo nosso{' '}
               <Link
-                href="mailto: algum@email.com"
+                href="mailto: suporte.qualis@gmail.com"
                 className="font-semibold text-green"
               >
                 Email

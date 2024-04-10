@@ -21,12 +21,15 @@ export default function Filter() {
 
   return (
     <div className="flex flex-col gap-1">
-      <label className="text-zinc-800 dark:text-white">Filtrar por Ano</label>
+      <label className="text-zinc-800 dark:text-white" htmlFor="filter-by-year">
+        Filtrar por Ano
+      </label>
       <div className="relative mt-1">
         <select
           className="dark:border-gray-600 focus-visible:border-indigo-500 dark:focus-visible:border-indigo-500 focus-visible:ring-offset-orange-300 dark:focus-visible:ring-offset-orange-300 relative w-full cursor-default appearance-none rounded-lg border border-stroke bg-white py-4 pl-3 pr-10 text-left shadow-solid-12 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 dark:bg-black dark:shadow-none dark:focus-visible:ring-white/75 sm:text-sm"
           defaultValue={searchParams.get('ano')?.toString()}
           onChange={(e) => handleSearch(parseInt(e.target.value, 0))}
+          id="filter-by-year"
         >
           <option value="0">Todos</option>
           <option value="2023">2023</option>

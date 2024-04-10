@@ -32,21 +32,21 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 w-full z-99999 py-7 ${
+      className={`fixed left-0 top-0 z-99999 w-full py-7 ${
         stickyMenu
-          ? 'bg-white dark:bg-black shadow !py-4 transition duration-100'
+          ? 'bg-white !py-4 shadow transition duration-100 dark:bg-black'
           : ''
       }`}
     >
-      <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 lg:flex items-center justify-between relative">
-        <div className="w-full lg:w-1/2 flex items-center justify-between">
+      <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 lg:flex 2xl:px-0">
+        <div className="flex w-full items-center justify-between lg:w-1/2">
           <a href="/">
             <Image
               src="/assets/images/logos/logo.png"
               alt="Logo do QualisAPS"
               width={130}
               height={30}
-              className="w-full hidden dark:block"
+              className="hidden w-full dark:block"
             />
             <Image
               src="/assets/images/logos/logo.png"
@@ -60,42 +60,42 @@ const Header = () => {
           {/* <!-- Hamburger Toggle BTN --> */}
           <button
             aria-label="Abrir Menu"
-            className="lg:hidden block"
+            className="block lg:hidden"
             onClick={() => setNavigationOpen(!navigationOpen)}
           >
-            <MdMenu className="block h-6 w-6" aria-label="Abrir Menu" />
+            <MdMenu className="block size-6" aria-label="Abrir Menu" />
           </button>
           {/* <!-- Hamburger Toggle BTN --> */}
         </div>
 
         {/* Nav Menu Start   */}
         <div
-          className={`w-full lg:w-full h-0 lg:h-auto invisible lg:visible lg:flex items-center justify-between ${
+          className={`invisible h-0 w-full items-center justify-between lg:visible lg:flex lg:h-auto lg:w-full ${
             navigationOpen &&
-            '!visible bg-white dark:bg-blacksection shadow-solid-5 h-auto max-h-[400px] overflow-y-scroll rounded-md mt-4 p-7.5'
+            '!visible mt-4 h-auto max-h-[400px] overflow-y-scroll rounded-md bg-white p-7.5 shadow-solid-5 dark:bg-blacksection'
           }`}
         >
           <nav>
-            <ul className="flex lg:items-center flex-col lg:flex-row gap-5 lg:gap-10 text-zinc-800 dark:text-white">
+            <ul className="flex flex-col gap-5 text-zinc-800 dark:text-white lg:flex-row lg:items-center lg:gap-10">
               {menuData.map((menuItem, key) => (
                 <li key={key} className={menuItem.submenu && 'group relative'}>
                   {menuItem.submenu ? (
                     <>
-                      <a
+                      <button
                         onClick={() => setDropdownToggler(!dropdownToggler)}
-                        className="hover:text-green flex items-center justify-between gap-3 cursor-pointer"
+                        className="flex cursor-pointer items-center justify-between gap-3 hover:text-green"
                       >
                         {menuItem.title}
                         <span>
                           <svg
-                            className="fill-waterloo group-hover:fill-primary w-3 h-3 cursor-pointer"
+                            className="size-3 cursor-pointer fill-waterloo group-hover:fill-primary"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
                           </svg>
                         </span>
-                      </a>
+                      </button>
 
                       <ul
                         className={`dropdown ${dropdownToggler ? 'flex' : ''}`}
@@ -112,7 +112,7 @@ const Header = () => {
                       href={`${menuItem.path}`}
                       className={
                         pathUrl === menuItem.path
-                          ? 'hover:text-green text-green'
+                          ? 'text-green hover:text-green'
                           : 'hover:text-green'
                       }
                     >
@@ -124,13 +124,13 @@ const Header = () => {
             </ul>
           </nav>
 
-          <div className="flex items-center gap-6 mt-7 lg:mt-0">
+          <div className="mt-7 flex items-center gap-6 lg:mt-0">
             <ThemeToggler />
 
             <Link
               href="https://qualisaps.unb.br/home?act=login"
-              className="flex items-center justify-center bg-green hover:bg-green-300 ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5"
-              target='_blank'
+              className="flex items-center justify-center rounded-full bg-green px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-green-300"
+              target="_blank"
             >
               Entrar
             </Link>

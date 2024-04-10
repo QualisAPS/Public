@@ -15,7 +15,7 @@ const SectionAbout = () => {
           }}
         />
 
-        <article className="animate_top rounded-md shadow-solid-13 bg-white dark:bg-blacksection border border-stroke dark:border-strokedark p-7.5 md:p-10 mt-8 xl:mt-10">
+        <article className="animate_top mt-8 rounded-md border border-stroke bg-white p-7.5 shadow-solid-13 dark:border-strokedark dark:bg-blacksection md:p-10 xl:mt-10">
           <div className="blog-details">
             <p>
               O Programa é fruto de uma parceria entre a Secretaria de Estado da
@@ -35,7 +35,7 @@ const SectionAbout = () => {
             <Link
               href="/sobre"
               aria-labelledby="about"
-              className="flex items-center justify-center bg-green hover:bg-green-300 ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5"
+              className="flex items-center justify-center rounded-full bg-green px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-green-300"
             >
               Conheça Mais
             </Link>

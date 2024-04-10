@@ -35,7 +35,7 @@ const Timeline = () => {
               Setembro 2019
             </time>
             <h3 className="text-gray-900 text-lg font-semibold dark:text-white">
-              QualisAPS
+              Qualis-APS
             </h3>
             <p className="text-gray-500 dark:text-gray-400 text-base font-normal">
               Lançamento do Programa de Qualificação da Atenção Primária à Saúde

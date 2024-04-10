@@ -1,37 +1,37 @@
-import { Menu } from "@/types/menu";
+import { Menu } from '@/types/menu';
 
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Início",
+    title: 'Início',
     newTab: false,
-    path: "/"
+    path: '/'
   },
   {
     id: 2,
-    title: "Quem Somos",
+    title: 'Quem Somos',
     newTab: false,
-    path: "/sobre"
+    path: '/sobre'
   },
   {
     id: 2.1,
-    title: "Notícias",
+    title: 'Notícias',
     newTab: false,
-    path: "/noticias"
+    path: '/noticias'
   },
   {
     id: 2.3,
-    title: "Biblioteca",
+    title: 'Biblioteca',
     newTab: false,
-    path: "/biblioteca"
+    path: '/biblioteca'
   },
   {
     id: 4,
-    title: "Acessibilidade",
+    title: 'Acessibilidade',
     newTab: false,
-    path: "/acessibilidade"
-  },
-    /*
+    path: '/acessibilidade'
+  }
+  /*
   {
     id: 3,
     title: "Pages",

@@ -18,7 +18,7 @@ const SectionAbout = () => {
         <article className="animate_top mt-8 rounded-md border border-stroke bg-white p-7.5 shadow-solid-13 dark:border-strokedark dark:bg-blacksection md:p-10 xl:mt-10">
           <div className="blog-details">
             <p className="text-gray-950 dark:text-white">
-              O QualisAPS é o Programa de Qualificação da Atenção Primária à
+              O Qualis-APS é o Programa de Qualificação da Atenção Primária à
               Saúde do Distrito Federal. Criado pela Portaria nº 39, de 23 de
               janeiro de 2019, tem por objetivo o fortalecimento da Atenção
               Primária à Saúde (APS) no Distrito Federal (DF), visando a
@@ -35,7 +35,7 @@ const SectionAbout = () => {
               Único de Saúde/DF são consideradas.
             </p>
             <p className="dark:text-white">
-              O eixo de Avaliação do Qualis APS está organizado em ciclos, com
+              O eixo de Avaliação do Qualis-APS está organizado em ciclos, com
               fases que se repetem a cada nova etapa, promovendo melhorias
               crescentes na qualidade. Todas as equipes de saúde da família
               (eSF), equipes de saúde bucal (eSB) e também, as equipes de gestão

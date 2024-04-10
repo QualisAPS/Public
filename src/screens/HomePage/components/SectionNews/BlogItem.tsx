@@ -25,7 +25,7 @@ const BlogItem = ({ blog }: { blog: Blog }) => {
         whileInView="visible"
         transition={{ duration: 1, delay: 0.5 }}
         viewport={{ once: true }}
-        className="animate_top rounded-lg bg-white p-4 pb-9 shadow-solid-8 dark:bg-blacksection"
+        className="animate_top rounded-lg border border-stroke bg-white p-4 pb-9 shadow-solid-13 dark:bg-blacksection"
       >
         <Link
           href="/noticia-qualis"

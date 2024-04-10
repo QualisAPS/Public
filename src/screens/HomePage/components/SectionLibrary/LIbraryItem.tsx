@@ -26,9 +26,9 @@ const LibraryItem = ({ blog }: { blog: Library }) => {
         whileInView="visible"
         transition={{ duration: 1, delay: 0.5 }}
         viewport={{ once: true }}
-        className="animate_top bg-white dark:bg-blacksection rounded-lg shadow-solid-13"
+        className="animate_top rounded-lg border border-stroke bg-white shadow-solid-13 dark:bg-blacksection"
       >
-        <Link href={href} className="block relative h-full">
+        <Link href={href} className="relative block h-full">
           <Image width={331} height={466} src={mainImage} alt={title} />
         </Link>
       </motion.div>
