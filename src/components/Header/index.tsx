@@ -43,7 +43,7 @@ const Header = () => {
           <a href="/">
             <Image
               src="/assets/images/logos/logo.png"
-              alt="Logo do QualisAPS"
+              alt="Logo do Qualis-APS"
               width={130}
               height={30}
               className="hidden w-full dark:block"

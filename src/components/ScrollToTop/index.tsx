@@ -33,7 +33,7 @@ export default function ScrollToTop() {
         <button
           onClick={scrollToTop}
           className="hover:shadow-signUp flex size-10 cursor-pointer items-center justify-center rounded-sm bg-green text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80"
-          aria-label="Scroll ate o topo"
+          aria-label="Scroll até o topo"
         >
           <span className="mt-[6px] size-3 rotate-45 border-l border-t border-white"></span>
         </button>
