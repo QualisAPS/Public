@@ -7,7 +7,7 @@ const SharePost = () => {
             <p className="text-black dark:text-white">Compartilhe:</p>
           </li>
           <li>
-            <a href="#">
+            <a>
               <svg
                 className="fill-socialicon transition-all duration-300 hover:fill-primary"
                 width="24"
@@ -31,7 +31,7 @@ const SharePost = () => {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a >
               <svg
                 className="fill-socialicon transition-all duration-300 hover:fill-primary"
                 width="24"
@@ -55,7 +55,7 @@ const SharePost = () => {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a >
               <svg
                 className="fill-socialicon transition-all duration-300 hover:fill-primary"
                 width="24"
